@@ -4,6 +4,8 @@
 
 by Oliver; Jan. 13, 2014
 
+http://www.oliverelliott.org/article/computing/tut_unix/
+
 ## Table of Contents
 #### 1. Introduction
 #### 2. 100 Useful Unix Commands
