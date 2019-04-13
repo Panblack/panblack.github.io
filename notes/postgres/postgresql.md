@@ -250,7 +250,11 @@ Bash:
 
 
 ## pgAdmin
-#sudo apt-get install curl ca-certificates
+https://wiki.postgresql.org/wiki/Apt
+
+https://apt.postgresql.org/pub/repos/apt/dists/bionic-pgdg/
+
+```
 curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo echo 'deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg 9.4' > /etc/apt/sources.list.d/pgdg.list
 sudo apt update; sudo apt install pgadmin3
@@ -259,4 +263,6 @@ sudo apt install pgadmin3
     postgresql-contrib postgresql-10 postgresql-doc-10
   The following NEW packages will be installed:
     libjs-underscore pgadmin3 pgadmin3-data pgagent postgresql-client postgresql-client-10 postgresql-client-common
+```
+
 
