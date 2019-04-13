@@ -4,10 +4,13 @@ https://www.postgresql.org/docs/9.4/plpgsql.html
 
 
 ## Difference between MSSQL and PostgreSQL functions  
+
 https://blog.csdn.net/fwxgx_nb/article/details/8730243	
+
 MS SQL 				| PostgreSQL
 ---    				| ---
-@@ROWCOUNT			| DECLARE V_ROW_NUM INT; ... GET DIAGNOSTICS V_ROW_NUM := ROW_COUNT;
+@@ROWCOUNT			| DECLARE V_ROW_NUM INT;<br> ... GET DIAGNOSTICS V_ROW_NUM := ROW_COUNT;
+@@ERROR				| EXCEPTION<br>WHEN OTHERS THEN<br>RAISE NOTICE 'SQLSTATE: %', SQLSTATE;<br>RAISE NOTICE 'SQLERRM: %', SQLERRM;<br>RETURN SQLSTATE;<br>END;
 
 
 ### Concepts
